@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Data Search</title>
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Car Data Search</h1>
+    </header>
+    <main>
+      <section class="search">
+        <form id="searchForm">
+          <div class="summary-link-container">
+            <a href="/view/id" class="summary-link button">Search by ID</a>
+            <a href="/view/make" class="summary-link button">Search by MAKE</a>
+            <a href="/view/model" class="summary-link button">Search by MODEL</a>
+            <a href="/view/year" class="summary-link button">Search by YEAR</a>
+            <a href="/view/country" class="summary-link button">Search by
+              COUNTRY</a>
+            <a href="/view/price" class="summary-link button">Search by PRICE</a>
+            <a href="/view/odometer" class="summary-link button">Search by
+              ODOMETER</a>
+            <a href="/view/stats" class="summary-link button">View Summary
+              Statistics</a>
+          </div>
+          <button id="favoritesButton" type="button">Favorites</button>
+
+          <section class="car-list">
+        <div class="results-container">
+          <div id="carList"></div>
+        </div>
+      </section>
+
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img src="/car.png" alt="Car" id="carImage" />
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

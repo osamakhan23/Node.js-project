@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Data Statistics</title>
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Car Data Statistics</h1>
+    </header>
+    <main>
+      <section class="center">
+        <form id="queryForm" class="center">
+          <div class="question-wrapper">
+            <label for="yearInput">Enter the year to find the average price?</label>
+            <input
+              type="number"
+              id="yearInput"
+              name="yearInput"
+              placeholder="Enter year"
+            />
+          </div>
+          <div class="question-wrapper">
+            <label for="makeInput">Enter the make to find the number of cars?</label>
+            <input
+              type="text"
+              id="makeInput"
+              name="makeInput"
+              placeholder="Enter make"
+            />
+          </div>
+          <button type="submit">Calculate</button>
+          <button type="reset" id="resetButton">Reset</button>
+        </form>
+        <div id="results"></div>
+      </section>
+      <section class="car-list">
+        <div class="results-container">
+          <div id="carList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="summary-link-container">
+        <a href="/" class="summary-link button">Back to Home Page</a>
+      </div>
+    </footer>
+    <script src="/javascript/summary.js"></script>
+  </body>
+</html>

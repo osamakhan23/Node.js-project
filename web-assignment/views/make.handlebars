@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Data Search</title>
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Car Data Search</h1>
+    </header>
+    <main>
+      <section class="search">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="searchMake"
+            class="input-box"
+            placeholder="Search by make"
+          />
+
+          <button type="submit">Find</button>
+          <button type="reset" id="resetButton">Reset</button>
+          <div class="summary-link-container">
+            <a href="/" class="summary-link button">Back to Home Page</a>
+          </div>
+
+        </form>
+      </section>
+      <section class="car-list">
+        <div class="results-container">
+          <div id="carList"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./car.png" alt="Car" id="carImage" />
+    </footer>
+
+    <script src="/javascript/make.js"></script>
+  </body>
+</html>
